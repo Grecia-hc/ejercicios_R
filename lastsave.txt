@@ -1,0 +1,84 @@
+> dir()
+[1] "csv_file.csv" "ej 1.R"      
+> mi_tabla<-read.csv("csv_file.csv")
+> mi_tabla
+       ï..ID  A  B     Cost Depr1 Depr2 Depr3 Depr4 Depr5
+1  1003nazdR 24 10 58625.49     3     5     7     4     7
+2  1018uwspS  1 25 67810.88     5     4     4     5     3
+3  1008gdpiR 15 11 39551.54     3     4     5     4     5
+4  1013nhbaS 20 17 77303.86     5     1     5     3     3
+5  1015ieolS 19 14 58011.74     4     2     6     3     4
+6  1019eutvS 11 16 53638.21     6     6     4     7     6
+7  1011plkfS 25 28 34945.17     5     7     5     6     7
+8  1009jdhlR 29 23 44780.05     3     3     3     1     6
+9  1005oihqR 12  5 70891.60     5     2     3     3     3
+10 1017owraS 22  4 46466.22     2     5     1     5     2
+11 1006exzlR 13 27 66765.48     3     7     3     4     4
+12 1007qyfuR 26 19 69051.92     1     5     2     2     3
+13 1001rnpeR 27  1 64760.52     4     3     5     1     5
+14 1016qnhrS 23 18 67361.95     6     3     1     6     4
+15 1014bwfnS 18 29 64347.22     4     3     4     3     5
+16 1004qpasR 28  7 63113.08     4     4     4     5     4
+17 1002zabcR 16  2 61002.80     1     5     3     5     2
+18 1010ahkzR  6 12 86332.32     2     4     6     2     1
+19 1020pzlvS 21 21 82355.66     7     1     7     7     5
+20 1012qjioS 17  3 76539.78     7     6     2     4     1
+> class(mi_tabla)
+[1] "data.frame"
+> lenght(mi_tabla)
+Error in lenght(mi_tabla) : no se pudo encontrar la función "lenght"
+> length(mi_tabla)
+[1] 9
+> attributes(mi_tabla)
+$names
+[1] "ï..ID" "A"     "B"     "Cost"  "Depr1" "Depr2" "Depr3" "Depr4" "Depr5"
+
+$class
+[1] "data.frame"
+
+$row.names
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+
+> str(mi_tabla)
+'data.frame':   20 obs. of  9 variables:
+ $ ï..ID: chr  "1003nazdR" "1018uwspS" "1008gdpiR" "1013nhbaS" ...
+ $ A    : int  24 1 15 20 19 11 25 29 12 22 ...
+ $ B    : int  10 25 11 17 14 16 28 23 5 4 ...
+ $ Cost : num  58625 67811 39552 77304 58012 ...
+ $ Depr1: int  3 5 3 5 4 6 5 3 5 2 ...
+ $ Depr2: int  5 4 4 1 2 6 7 3 2 5 ...
+ $ Depr3: int  7 4 5 5 6 4 5 3 3 1 ...
+ $ Depr4: int  4 5 4 3 3 7 6 1 3 5 ...
+ $ Depr5: int  7 3 5 3 4 6 7 6 3 2 ...
+> mi_tabla
+       ï..ID  A  B     Cost Depr1 Depr2 Depr3 Depr4 Depr5
+1  1003nazdR 24 10 58625.49     3     5     7     4     7
+2  1018uwspS  1 25 67810.88     5     4     4     5     3
+3  1008gdpiR 15 11 39551.54     3     4     5     4     5
+4  1013nhbaS 20 17 77303.86     5     1     5     3     3
+5  1015ieolS 19 14 58011.74     4     2     6     3     4
+6  1019eutvS 11 16 53638.21     6     6     4     7     6
+7  1011plkfS 25 28 34945.17     5     7     5     6     7
+8  1009jdhlR 29 23 44780.05     3     3     3     1     6
+9  1005oihqR 12  5 70891.60     5     2     3     3     3
+10 1017owraS 22  4 46466.22     2     5     1     5     2
+11 1006exzlR 13 27 66765.48     3     7     3     4     4
+12 1007qyfuR 26 19 69051.92     1     5     2     2     3
+13 1001rnpeR 27  1 64760.52     4     3     5     1     5
+14 1016qnhrS 23 18 67361.95     6     3     1     6     4
+15 1014bwfnS 18 29 64347.22     4     3     4     3     5
+16 1004qpasR 28  7 63113.08     4     4     4     5     4
+17 1002zabcR 16  2 61002.80     1     5     3     5     2
+18 1010ahkzR  6 12 86332.32     2     4     6     2     1
+19 1020pzlvS 21 21 82355.66     7     1     7     7     5
+20 1012qjioS 17  3 76539.78     7     6     2     4     1
+> mi_objeti<-mi_tabla$ID
+> mi_objeto
+Error: objeto 'mi_objeto' no encontrado
+> mi_objeti<-mi_tabla$ID
+> mi_objeti
+NULL
+> mi_objeto<-mi_tabla$ID
+> mi_objeto
+NULL
+> 
